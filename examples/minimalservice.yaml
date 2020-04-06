@@ -14,7 +14,22 @@ info:
 ################################################################################
 #                            API Information                                   #
 ################################################################################
-
+# Testing MUR-9171
+x-exosite-token: "myprivatetoken"
+x-exosite-usage-metrics:
+  bandwidth:
+    name: Data size downloaded
+    description: The number of bytes downloaded over a calendar month by devices of this product.
+    type: counter
+    unit: byte
+    categories:
+      in: Data uploaded
+      out: Data downloaded
+  size:
+    name: Data size stored
+    description: The number of bytes stored for this product.
+    type: gauge
+    unit: byte
 # A hostname with a valid, signed, and active TSL certificate is required.
 host: google.com
 basePath: /
